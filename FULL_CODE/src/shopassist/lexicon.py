@@ -673,7 +673,18 @@ BUDGET_RES = [
     ),
 ]
 MIN_BUDGET_RE = re.compile(
-    r"\b(?:above|more than|over)\s+(?:rs\.?\s*)?(\d+)\b|\b(\d+)\s+se (?:zyada|upar|jyada)\b"
+    r"\b(?:above|more than|greater than|over|at least|atleast|minimum|min|starting from|starting at)\s+"
+    r"(?:rs\.?\s*|inr\s*)?(\d+(?:\.\d+)?)\b"
+    r"|\b(?:rs\.?\s*)?(\d+(?:\.\d+)?)\s*(?:rs\.?\s*)?(?:se zyada|se jyada|se upar|se adhik|or more|and above|"
+    r"or above|plus)\b"
+)
+# "between 600 and 800", "600 se 800 ke beech", "600 to 800 range", "rs 600 - rs 800".
+# Range words are required, so sizes like "8-9 saal" are never read as a budget.
+RANGE_BUDGET_RE = re.compile(
+    r"\bbetween\s+(?:rs\.?\s*)?(\d+(?:\.\d+)?)\s*(?:rs\.?\s*)?(?:and|to|-|se)\s*(?:rs\.?\s*)?(\d+(?:\.\d+)?)\b"
+    r"|\b(?:rs\.?\s*)?(\d+(?:\.\d+)?)\s*(?:rs\.?\s*)?(?:se|to|-)\s*(?:rs\.?\s*)?(\d+(?:\.\d+)?)\s*(?:rs\.?\s*)?"
+    r"(?:ke beech|ke bich|ke darmiyan|tak|ke andar|range|ke range)\b"
+    r"|\brs\.?\s*(\d+(?:\.\d+)?)\s*(?:-|to)\s*(?:rs\.?\s*)?(\d+(?:\.\d+)?)\b"
 )
 
 # ------------------------------------------------------------------------------------------ policy
@@ -778,5 +789,7 @@ sabse sasta sasti saste mehenga mehnga cheapest cheap lowest under below within 
 niche neeche tak rs inr rupee rupees liye ghar pe par jo vo wo ye yeh is us iska uska inme inmein in
 se kam zyada wale ka ki which one ones new latest good best acha accha achha batana bataiye chalega
 chalegi
+greater more less than above below over between least atleast minimum maximum min max range beech bich
+darmiyan upar adhik jyada starting
 """.split()  # noqa: SIM905  (a word list reads better as text)
 )

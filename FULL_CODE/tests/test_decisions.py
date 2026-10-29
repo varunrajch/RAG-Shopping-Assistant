@@ -120,3 +120,11 @@ def test_colour_word_is_ignored_for_products_without_colours(assistant):
     assert r.action == "refuse"
     r = ask(assistant, "pink kadai dikhao", "k")  # kadais have no colour attribute at all
     assert r.action == "answer" and r.cited_product_ids == ["SKU-TEST0009"]
+
+
+def test_price_range_follow_up_respects_the_lower_limit(assistant):
+    ask(assistant, "6 mm yoga mat chahiye", "range")
+    r = ask(assistant, "greater than 600 and less than 900", "range")
+    assert r.action == "answer" and r.cited_product_ids == ["SKU-TEST0003"]  # 839 only; 549 is below 600
+    r = ask(assistant, "6 mm yoga mat between 600 and 800", "range2")
+    assert r.action == "refuse" and "between ₹600 and ₹800" in r.answer_text

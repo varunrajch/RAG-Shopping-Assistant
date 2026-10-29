@@ -219,14 +219,20 @@ class QueryParser:
 
     # ---------------------------------------------------------------------------------- budget
     def _budget(self, q: ParsedQuery, used: list[bool]) -> None:
-        for rx in lx.BUDGET_RES:
-            m = rx.search(q.text)
-            if m:
-                q.budget_max = float(m.group(1))
-                break
-        m = lx.MIN_BUDGET_RE.search(q.text)
+        """Budget limits: a range ("600 se 800 ke beech"), an upper limit, and/or a lower limit."""
+        m = lx.RANGE_BUDGET_RE.search(q.text)
         if m:
-            q.budget_min = float(m.group(1) or m.group(2))
+            low, high = sorted(float(g) for g in m.groups() if g is not None)
+            q.budget_min, q.budget_max = low, high
+        else:
+            for rx in lx.BUDGET_RES:
+                m = rx.search(q.text)
+                if m:
+                    q.budget_max = float(m.group(1))
+                    break
+            m = lx.MIN_BUDGET_RE.search(q.text)
+            if m:
+                q.budget_min = float(m.group(1) or m.group(2))
         for value in (q.budget_max, q.budget_min):
             if value is None:
                 continue

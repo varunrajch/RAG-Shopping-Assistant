@@ -110,3 +110,26 @@ def test_everyday_word_that_is_also_a_brand_is_not_a_product_name(parse):
     q = parse("pair se maarne wali kridaa cheez")  # 'kridaa' is a brand, the rest is not understood
     assert q.names == [] and "kridaa" in q.unknown_words
     assert parse("kridaa football price").names[0].brand == "kridaa"  # with a product type it is a brand
+
+
+@pytest.mark.parametrize(
+    ("text", "low", "high"),
+    [
+        ("TPE greater than 600 and less than 800", 600.0, 800.0),
+        ("between 600 and 800", 600.0, 800.0),
+        ("600 se 800 ke beech wala", 600.0, 800.0),
+        ("yoga mat 600 to 800 range", 600.0, 800.0),
+        ("mat rs 600 - rs 800", 600.0, 800.0),
+        ("above 500 wale dikhao", 500.0, None),
+        ("1000 se zyada wala", 1000.0, None),
+        ("at least 300", 300.0, None),
+    ],
+)
+def test_budget_ranges_and_lower_limits(parse, text, low, high):
+    q = parse(text)
+    assert (q.budget_min, q.budget_max) == (low, high)
+
+
+def test_kids_size_is_not_a_budget_range(parse):
+    q = parse("set 8-9 saal ke bacche ka size milega?")
+    assert q.budget_min is None and q.budget_max is None and q.sizes == ["8-9Y"]

@@ -120,6 +120,17 @@ def format_value(key: str, value: Any) -> str:
     return str(value)
 
 
+def budget_phrase(low: float | None, high: float | None) -> str:
+    """' between ₹600 and ₹800', ' under ₹800', ' above ₹600' or ''."""
+    if low is not None and high is not None:
+        return f" between {rupees(low)} and {rupees(high)}"
+    if high is not None:
+        return f" under {rupees(high)}"
+    if low is not None:
+        return f" above {rupees(low)}"
+    return ""
+
+
 def _price_stock(p: Product) -> str:
     return f"{rupees(p.price_inr)}, {STOCK_TEXT[p.stock_status]}"
 
@@ -325,9 +336,7 @@ class ResponseBuilder:
 
     def _no_match(self, d: Decision) -> tuple[str, list[StatedFact], bool]:
         what = d.reason or "that"
-        budget = ""
-        if d.filters and d.filters.budget_max is not None:
-            budget = f" under {rupees(d.filters.budget_max)}"
+        budget = budget_phrase(d.filters.budget_min, d.filters.budget_max) if d.filters else ""
         return (
             (
                 f"I don't have that. No product in our catalogue matches {what}{budget}. "
