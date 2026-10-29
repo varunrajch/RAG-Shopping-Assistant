@@ -1,4 +1,4 @@
-# R3: The Conversational Shopping Assistant That Doesn't Lie
+# The Conversational Shopping Assistant That Doesn't Lie
 
 **Team:** Tech Titans (TEAM-001450)
 
