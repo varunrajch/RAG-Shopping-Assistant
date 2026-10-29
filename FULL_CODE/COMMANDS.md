@@ -15,7 +15,7 @@ after `GROQ_API_KEY=` (the key is optional; without it the chatbot still works, 
 ## Every time
 
 ```bash
-cd ~/Desktop/Varun/RAG-Shopping-Assistant/FULL_CODE
+cd FULL_CODE
 uv run python main.py serve
 ```
 
