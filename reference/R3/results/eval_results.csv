@@ -1,0 +1,250 @@
+id,type,query,expected,decision,correct_decision,hit,grounded,invented_prices,problems,cited,latency_ms,tokens_in,tokens_out,llm_called,reply
+Q01,english,How much is the Stridex AeroGlide?,answer,answer,True,True,True,0,,P02154,10.2,0,0,False,"The Stridex AeroGlide White Mesh Running Shoes costs ₹3,499 [P02154]. It is in stock [P02154].
+
+Details: **Stridex AeroGlide White Mesh Running Shoes**: ₹3,499, In stock, colour White, material Mesh, size UK 9, rated 4.6/5 [P02154]"
+Q02,english,Is the Everlast pressure cooker in stock?,answer,answer,True,True,True,0,,P01602,9.0,0,0,False,"The Rasoi Pro Everlast Silver Stainless Steel Pressure Cooker is in stock [P01602]. It costs ₹2,499 [P01602].
+
+Details: **Rasoi Pro Everlast Silver Stainless Steel Pressure Cooker**: ₹2,499, In stock, colour Silver, material Stainless Steel, size 5 L, rated 4.4/5 [P01602]"
+Q03,english,Tell me about the Voyager laptop bag,answer,answer,True,True,True,0,,P04915,9.4,0,0,False,"The Trekka Voyager Black Polyester Laptop Bag is priced at ₹1,899 and rated 4.3/5 by shoppers [P04915]. It is currently out of stock [P04915].
+
+Details: **Trekka Voyager Black Polyester Laptop Bag**: ₹1,899, Out of stock, colour Black, material Polyester, size One Size, rated 4.3/5 [P04915]"
+Q04,english,Rajmahal saree price,answer,answer,True,True,True,0,,P00792,8.6,0,0,False,"The Bunkar Rajmahal Maroon Silk Banarasi Saree costs ₹8,999 [P00792]. It is in stock, but only a few are left [P00792].
+
+Details: **Bunkar Rajmahal Maroon Silk Banarasi Saree**: ₹8,999, Low stock (few left), colour Maroon, material Silk, size Free Size, rated 4.8/5 [P00792]"
+Q05,english,What material is the Moonbeam lamp?,answer,answer,True,True,True,0,,P01881,7.4,0,0,False,"The GharSaaj Moonbeam Beige Brass Table Lamp is made of brass [P01881]. It is in stock [P01881].
+
+Details: **GharSaaj Moonbeam Beige Brass Table Lamp**: ₹2,199, In stock, colour Beige, material Brass, size Standard, rated 4.2/5 [P01881]"
+Q06,english,What colour is the Coastline shirt?,answer,answer,True,True,True,0,,P04452,7.0,0,0,False,"The Threadline Coastline Green Linen Casual Shirt comes in green [P04452]. It is in stock [P04452].
+
+Details: **Threadline Coastline Green Linen Casual Shirt**: ₹1,499, In stock, colour Green, material Linen, size L, rated 4.3/5 [P04452]"
+Q07,english,"Show me white cotton shirts under ₹1,000",answer,answer,True,True,True,0,,P03022 P01414 P00460 P02010 P01327,8.1,0,0,False,"I found 25 White Cotton Shirts under ₹1,000. Here are the top 5:
+
+- Threadline White Cotton T-Shirt: ₹339, Low stock (few left) [P03022]
+- Threadline White Cotton T-Shirt: ₹619, In stock [P01414]
+- Threadline White Cotton T-Shirt: ₹329, In stock [P00460]
+- Threadline White Cotton T-Shirt: ₹309, In stock [P02010]
+- Threadline White Cotton T-Shirt: ₹949, Out of stock [P01327]
+
+Tell me a colour, size or budget to narrow it down."
+Q08,english,Cheapest non-stick pan,answer,answer,True,True,True,0,,P00619,6.6,0,0,False,"The cheapest of the 90 Non-Stick Pan is the Rasoi Pro Red Aluminium Non-Stick Pan at ₹499 [P00619]. It is in stock [P00619].
+
+Details: **Rasoi Pro Red Aluminium Non-Stick Pan**: ₹499, In stock, colour Red, material Aluminium, size 28 cm, rated 4.9/5 [P00619]"
+Q09,english,List backpacks under ₹800 in stock,answer,answer,True,True,True,0,,P00250 P01030 P02372 P00087 P03521,7.8,0,0,False,"I found 9 Backpack under ₹800 in stock. Here are the top 5:
+
+- Trekka Red Polyester Backpack: ₹609, In stock [P00250]
+- Zaira Blue Nylon Backpack: ₹669, In stock [P01030]
+- Trekka Beige Polyester Backpack: ₹669, In stock [P02372]
+- Zaira Blue Canvas Backpack: ₹649, Low stock (few left) [P00087]
+- Zaira Blue Polyester Backpack: ₹779, Low stock (few left) [P03521]
+
+Tell me a colour, size or budget to narrow it down."
+Q10,english,Do you have green cushion covers?,answer,answer,True,True,True,0,,P01770 P03983 P04360 P04111 P04237,7.1,0,0,False,"I found 19 Green Cushion Cover. Here are the top 5:
+
+- Diya Green Cotton Cushion Cover: ₹499, In stock [P01770]
+- Diya Green Cotton Cushion Cover: ₹339, In stock [P03983]
+- Diya Green Cotton Cushion Cover: ₹669, In stock [P04360]
+- Nook Green Jute Cushion Cover: ₹709, In stock [P04111]
+- Diya Green Cotton Cushion Cover: ₹789, In stock [P04237]
+
+Tell me a colour, size or budget to narrow it down."
+Q11,english,I need a maroon silk saree,clarify,clarify,True,,True,0,,P01691 P00673 P04713,8.0,0,0,False,"I found 46 Maroon Silk Sarees, so I don't want to guess which one you mean. Here are 3 across the price range:
+
+1. Kaashi Maroon Silk Embroidered Saree: ₹1,599, In stock [P01691]
+2. Rangoli Maroon Silk Banarasi Saree: ₹7,259, In stock [P00673]
+3. Rangoli Maroon Silk Banarasi Saree: ₹12,299, In stock [P04713]
+
+Which brand do you prefer: Rangoli, Bunkar or Kaashi? Or tell me a budget, size or the ID of one of these."
+Q12,hinglish,blu running shoe sasta wala,answer,answer,True,True,True,0,,P00925,6.8,0,0,False,"The cheapest of the 17 Blue Running Shoes is the Stridex Blue Mesh Running Shoes at ₹1,299 [P00925]. It is in stock [P00925].
+
+Details: **Stridex Blue Mesh Running Shoes**: ₹1,299, In stock, colour Blue, material Mesh, size UK 8, rated 4.0/5 [P00925]"
+Q13,hinglish,cotton kurta 1500 se kam hai kya,answer,answer,True,True,True,0,,P04833 P01299 P01863 P01535 P02223,7.2,0,0,False,"I found 119 Cotton Kurtas under ₹1,500. Here are the top 5:
+
+- Kalaa Chikankari White Cotton Straight Kurta: ₹1,299, In stock [P04833]
+- Kalaa Pink Cotton Anarkali Kurta: ₹1,129, In stock [P01299]
+- Kalaa Red Cotton Anarkali Kurta: ₹1,459, In stock [P01863]
+- Kalaa White Cotton Straight Kurta: ₹929, In stock [P01535]
+- Kalaa Orange Cotton Pathani Kurta: ₹919, Out of stock [P02223]
+
+Tell me a colour, size or budget to narrow it down."
+Q14,hinglish,kala joota size 9 dikhao,answer,answer,True,True,True,0,,P04486 P04121 P00006 P02159 P02517,10.0,0,0,False,"I found 20 Black Footwear size 9. Here are the top 5:
+
+- Padukaa Black Knit Running Shoes: ₹4,889, In stock [P04486]
+- Padukaa Black Leather Formal Shoes: ₹2,459, In stock [P04121]
+- Padukaa Black Synthetic Formal Shoes: ₹3,309, Out of stock [P00006]
+- Padukaa Black Knit Running Shoes: ₹3,199, Low stock (few left) [P02159]
+- Trailmark Black Synthetic Running Shoes: ₹2,869, In stock [P02517]
+
+Tell me a colour, size or budget to narrow it down."
+Q15,hinglish,neeli jeans 1000 tak,clarify,clarify,True,,True,0,,P00844 P01293 P03026,8.3,0,0,False,"I found 12 Blue Jeans under ₹1,000, so I don't want to guess which one you mean. Here are 3 across the price range:
+
+1. Threadline Blue Denim Regular Fit Jeans: ₹829, In stock [P00844]
+2. Rivet Blue Denim Regular Fit Jeans: ₹929, In stock [P01293]
+3. Rivet Blue Stretch Denim Skinny Jeans: ₹989, In stock [P03026]
+
+Which material do you prefer: Denim or Stretch Denim? Or tell me a budget, size or the ID of one of these."
+Q16,hinglish,lal saree chahiye,clarify,clarify,True,,True,0,,P03817 P00725 P03103,7.9,0,0,False,"I found 82 Red Sarees, so I don't want to guess which one you mean. Here are 3 across the price range:
+
+1. Kaashi Red Georgette Printed Saree: ₹1,309, Out of stock [P03817]
+2. Kaashi Red Silk Banarasi Saree: ₹3,279, Low stock (few left) [P00725]
+3. Kaashi Red Silk Banarasi Saree: ₹12,929, Out of stock [P03103]
+
+Which material do you prefer: Silk, Chiffon, Georgette or Cotton? Or tell me a budget, size or the ID of one of these."
+Q17,hinglish,steel ka pressure cooker sasta wala,answer,answer,True,True,True,0,,P01248,7.2,0,0,False,"The cheapest of the 51 Stainless Steel Pressure Cooker is the Handi House Red Stainless Steel Pressure Cooker at ₹1,209 [P01248]. It is in stock [P01248].
+
+Details: **Handi House Red Stainless Steel Pressure Cooker**: ₹1,209, In stock, colour Red, material Stainless Steel, size 3 L, rated 3.3/5 [P01248]"
+Q18,hinglish,Chikankari kurta ka price kya hai?,answer,answer,True,True,True,0,,P04833,7.7,0,0,False,"The Kalaa Chikankari White Cotton Straight Kurta costs ₹1,299 [P04833]. It is in stock [P04833].
+
+Details: **Kalaa Chikankari White Cotton Straight Kurta**: ₹1,299, In stock, colour White, material Cotton, size M, rated 4.5/5 [P04833]"
+Q19,hinglish,laptop bag 2000 ke andar dikhao,answer,answer,True,True,True,0,,P04355 P02351 P00015 P01993 P02880,8.4,0,0,False,"I found 46 Laptop Bag under ₹2,000. Here are the top 5:
+
+- Trekka Green Leather Laptop Bag: ₹1,969, In stock [P04355]
+- Trekka Grey Leather Laptop Bag: ₹1,879, In stock [P02351]
+- Trekka Red Leather Laptop Bag: ₹1,599, In stock [P00015]
+- Trekka Red Leather Laptop Bag: ₹1,989, Out of stock [P01993]
+- Trekka Red Leather Laptop Bag: ₹1,379, In stock [P02880]
+
+Tell me a colour, size or budget to narrow it down."
+Q20,misspelt,aeroglyde runing shoes price,answer,answer,True,True,True,0,,P02154,7.5,0,0,False,"The Stridex AeroGlide White Mesh Running Shoes costs ₹3,499 [P02154]. It is in stock [P02154].
+
+Details: **Stridex AeroGlide White Mesh Running Shoes**: ₹3,499, In stock, colour White, material Mesh, size UK 9, rated 4.6/5 [P02154]"
+Q21,misspelt,cheep cotton kurtha,answer,answer,True,True,True,0,,P01951,6.3,0,0,False,"The cheapest of the 230 Cotton Kurtas is the Bunkar Yellow Cotton Short Kurti at ₹429 [P01951]. It is in stock [P01951].
+
+Details: **Bunkar Yellow Cotton Short Kurti**: ₹429, In stock, colour Yellow, material Cotton, size L, rated 3.1/5 [P01951]"
+Q22,misspelt,blak lether handbag under 3000,clarify,clarify,True,,True,0,,P03352 P01421 P03553,8.5,0,0,False,"I found 3 Black Leather Handbag under ₹3,000, so I don't want to guess which one you mean. Here are 3 across the price range:
+
+1. Carryall Black Leather Handbag: ₹1,069, In stock [P03352]
+2. Carryall Black Leather Handbag: ₹1,659, Out of stock [P01421]
+3. Zaira Black Leather Handbag: ₹2,639, In stock [P03553]
+
+Which brand do you prefer: Carryall or Zaira? Or tell me a budget, size or the ID of one of these."
+Q23,misspelt,show sneakrs under 1500,answer,answer,True,True,True,0,,P02896 P01048 P00646 P00229 P04762,6.6,0,0,False,"I found 33 Sneakers under ₹1,500. Here are the top 5:
+
+- Trailmark Black Synthetic Sneakers: ₹1,049, Out of stock [P02896]
+- Padukaa Red Leather Sneakers: ₹1,499, Out of stock [P01048]
+- Trailmark Blue Leather Sneakers: ₹1,459, In stock [P00646]
+- Stridex Brown Leather Sneakers: ₹1,079, In stock [P00229]
+- Padukaa Brown Leather Sneakers: ₹1,119, Low stock (few left) [P04762]
+
+Tell me a colour, size or budget to narrow it down."
+Q24,misspelt,presure cooker cheapest,answer,answer,True,True,True,0,,P03909,6.0,0,0,False,"The cheapest of the 97 Pressure Cooker is the Rasoi Pro Green Aluminium Pressure Cooker at ₹1,199 [P03909]. It is in stock [P03909].
+
+Details: **Rasoi Pro Green Aluminium Pressure Cooker**: ₹1,199, In stock, colour Green, material Aluminium, size 3 L, rated 2.9/5 [P03909]"
+Q25,misspelt,pink sare,clarify,clarify,True,,True,0,,P04194 P03208 P00581,8.1,0,0,False,"I found 70 Pink Sarees, so I don't want to guess which one you mean. Here are 3 across the price range:
+
+1. Bunkar Pink Georgette Printed Saree: ₹859, In stock [P04194]
+2. Kaashi Pink Chiffon Printed Saree: ₹2,909, In stock [P03208]
+3. Kaashi Pink Chiffon Party Wear Saree: ₹7,819, Out of stock [P00581]
+
+Which material do you prefer: Silk, Georgette, Chiffon or Cotton? Or tell me a budget, size or the ID of one of these."
+Q26,misspelt,chikankri kurta,answer,answer,True,True,True,0,,P04833,7.0,0,0,False,"The Kalaa Chikankari White Cotton Straight Kurta is priced at ₹1,299 and rated 4.5/5 by shoppers [P04833].
+
+Details: **Kalaa Chikankari White Cotton Straight Kurta**: ₹1,299, In stock, colour White, material Cotton, size M, rated 4.5/5 [P04833]"
+Q27,out_of_catalogue,Do you sell iPhones?,refuse,refuse,True,,True,0,,,10.0,0,0,False,"I don't have that. We only sell footwear, shirts, kurtas, sarees, jeans, bags, kitchen and home decor items."
+Q28,out_of_catalogue,Do you have a gaming laptop?,refuse,refuse,True,,True,0,,,6.3,0,0,False,"I don't have that. We only sell footwear, shirts, kurtas, sarees, jeans, bags, kitchen and home decor items. The closest thing we sell is Laptop Bag (Bags)."
+Q29,out_of_catalogue,Any LED TV under 20000?,refuse,refuse,True,,True,0,,,11.1,0,0,False,"I don't have that. We only sell footwear, shirts, kurtas, sarees, jeans, bags, kitchen and home decor items."
+Q30,out_of_catalogue,I want a gold necklace,refuse,refuse,True,,True,0,,,10.8,0,0,False,"I don't have that. We only sell footwear, shirts, kurtas, sarees, jeans, bags, kitchen and home decor items."
+Q31,out_of_catalogue,Do you sell washing machines?,refuse,refuse,True,,True,0,,,10.8,0,0,False,"I don't have that. We only sell footwear, shirts, kurtas, sarees, jeans, bags, kitchen and home decor items."
+Q32,out_of_catalogue,football boots size 9,refuse,refuse,True,,True,0,,,10.7,0,0,False,"I don't have that. We only sell footwear, shirts, kurtas, sarees, jeans, bags, kitchen and home decor items. The closest thing we sell is Sneakers (Footwear)."
+Q33,trap,Price of the blue running shoe?,clarify,clarify,True,,True,0,,P00925 P03671 P03812,7.9,0,0,False,"I found 17 Blue Running Shoes, so I don't want to guess which one you mean. Here are 3 across the price range:
+
+1. Stridex Blue Mesh Running Shoes: ₹1,299, In stock [P00925]
+2. UrbanPace Blue Knit Running Shoes: ₹2,379, In stock [P03671]
+3. UrbanPace Blue Knit Running Shoes: ₹4,929, In stock [P03812]
+
+Which material do you prefer: Synthetic, Mesh or Knit? Or tell me a budget, size or the ID of one of these."
+Q34,trap,What is the price of the iPhone 15?,refuse,refuse,True,,True,0,,,10.0,0,0,False,"I don't have that. We only sell footwear, shirts, kurtas, sarees, jeans, bags, kitchen and home decor items."
+Q35,trap,Is the red saree in stock?,clarify,clarify,True,,True,0,,P04832 P00503 P04532,8.1,0,0,False,"I found 68 Red Sarees in stock, so I don't want to guess which one you mean. Here are 3 across the price range:
+
+1. Rangoli Red Cotton Printed Saree: ₹829, In stock [P04832]
+2. Kaashi Red Georgette Printed Saree: ₹1,929, Low stock (few left) [P00503]
+3. Bunkar Red Chiffon Embroidered Saree: ₹5,239, Low stock (few left) [P04532]
+
+Which material do you prefer: Silk, Chiffon, Georgette or Cotton? Or tell me a budget, size or the ID of one of these."
+Q36,trap,What is the cheapest laptop?,refuse,refuse,True,,True,0,,,5.9,0,0,False,"I don't have that. We only sell footwear, shirts, kurtas, sarees, jeans, bags, kitchen and home decor items. The closest thing we sell is Laptop Bag (Bags)."
+Q37,trap,Silk saree under ₹500,refuse,refuse,True,,True,0,,,11.1,0,0,False,"I don't have that (Silk Sarees under ₹500) in our catalogue. We do sell Sarees; try a different budget, colour, size or material."
+Q38,trap,Green leather jeans,refuse,refuse,True,,True,0,,,10.4,0,0,False,"I don't have that (Green Leather Jeans) in our catalogue. We do sell Jeans; try a different budget, colour, size or material."
+Q39,trap,Running shoes in size 14,refuse,refuse,True,,True,0,,,10.2,0,0,False,"I don't have that (Running Shoes size 14) in our catalogue. We do sell Running Shoes; try a different budget, colour, size or material."
+Q40,trap,Do you have the Voyager laptop bag in red?,refuse,refuse,True,,True,0,,,11.2,0,0,False,"I don't have that (Red Laptop Bag) in our catalogue. We do sell Laptop Bag; try a different budget, colour, size or material."
+Q41,policy,What is your return policy?,answer,answer,True,True,True,0,,R1,4.6,0,0,False,"Our store policy covers this in section R1 (Return window):
+
+> You can return most items within 10 days of delivery for a full refund. The item must be unused, with the original tags and packaging. Start a return from the My Orders page. [Policy R1]"
+Q42,policy,How many days do I have to return an item?,answer,answer,True,True,True,0,,R1,4.5,0,0,False,"Our store policy covers this in section R1 (Return window):
+
+> You can return most items within 10 days of delivery for a full refund. The item must be unused, with the original tags and packaging. Start a return from the My Orders page. [Policy R1]"
+Q43,policy,When will I get my refund?,answer,answer,True,True,True,0,,R3,4.6,0,0,False,"Our store policy covers this in section R3 (Refunds):
+
+> Refunds go to the original payment method within 5 to 7 working days after the item passes a quality check at our warehouse. For orders paid in cash, the refund is sent to your bank account by NEFT. [Policy R3]"
+Q44,policy,Is shipping free?,answer,answer,True,True,True,0,,S2,5.1,0,0,False,"Our store policy covers this in section S2 (Shipping charges):
+
+> Shipping is free on orders of ₹999 and above. A shipping fee of ₹79 applies to orders below ₹999. [Policy S2]"
+Q45,policy,Do you ship outside India?,answer,answer,True,True,True,0,,S1,5.1,0,0,False,"Our store policy covers this in section S1 (Where we ship):
+
+> We ship to all serviceable pin codes in India. We do not ship outside India; international shipping is not available. [Policy S1]"
+Q46,policy,Is cash on delivery available?,answer,answer,True,True,True,0,,S4,4.7,0,0,False,"Our store policy covers this in section S4 (Cash on delivery):
+
+> Cash on delivery (COD) is available on orders up to ₹10,000. A COD fee of ₹49 is charged per order. [Policy S4]"
+Q47,policy,What is the warranty on pressure cookers?,answer,answer,True,True,True,0,,W1,5.1,0,0,False,"Our store policy covers this in section W1 (Kitchen warranty):
+
+> Pressure cookers come with a 5 year manufacturer warranty against manufacturing defects. Non-stick pans carry a 1 year warranty on the coating. Kadhais, bottles, lunch boxes and dinner sets have no warranty. [Policy W1]"
+Q48,policy,Can I exchange shoes for a different size?,answer,answer,True,True,True,0,,R4,5.0,0,0,False,"Our store policy covers this in section R4 (Exchanges):
+
+> Footwear, shirts, kurtas and jeans can be exchanged once for a different size within 10 days of delivery, subject to stock. Exchanges for a different colour or product are not possible; please place a new order. [Policy R4]"
+Q49,policy,return kitne din mein kar sakte hai?,answer,answer,True,True,True,0,,R1,4.3,0,0,False,"Our store policy covers this in section R1 (Return window):
+
+> You can return most items within 10 days of delivery for a full refund. The item must be unused, with the original tags and packaging. Start a return from the My Orders page. [Policy R1]"
+Q50,policy,Do you offer EMI?,refuse,refuse,True,,True,0,,,4.6,0,0,False,"I don't have that information in our store policy. I can answer questions about returns (sections R1 to R5), shipping (S1 to S5) and warranty (W1 to W4)."
+Q51,policy,Do you offer gift wrapping?,refuse,refuse,True,,True,0,,,5.4,0,0,False,"I don't have that information in our store policy. I can answer questions about returns (sections R1 to R5), shipping (S1 to S5) and warranty (W1 to W4)."
+Q52,multi_turn,"I want a kurta under ₹2,000",clarify,clarify,True,,True,0,,P03158 P01607 P03120,8.2,0,0,False,"I found 358 Kurtas under ₹2,000, so I don't want to guess which one you mean. Here are 3 across the price range:
+
+1. Kalaa White Linen Straight Kurta: ₹629, In stock [P03158]
+2. Kalaa Blue Rayon Straight Kurta: ₹1,219, In stock [P01607]
+3. Kalaa Red Rayon Straight Kurta: ₹1,979, In stock [P03120]
+
+Which material do you prefer: Cotton, Rayon, Khadi or Linen? Or tell me a budget, size or the ID of one of these."
+Q53,multi_turn,show me cotton ones,answer,answer,True,True,True,0,,P00974 P00555 P01992 P00735 P04665,5.9,0,0,False,"I found 145 Cotton Kurtas under ₹2,000. Here are the top 5:
+
+- Bunkar White Cotton Pathani Kurta: ₹1,109, Low stock (few left) [P00974]
+- Bunkar Yellow Cotton Pathani Kurta: ₹1,369, Low stock (few left) [P00555]
+- Bunkar Red Cotton Pathani Kurta: ₹1,879, Low stock (few left) [P01992]
+- Bunkar White Cotton Pathani Kurta: ₹1,349, In stock [P00735]
+- Sutra White Cotton Anarkali Kurta: ₹1,549, In stock [P04665]
+
+Tell me a colour, size or budget to narrow it down."
+Q54,multi_turn,which is the cheapest in maroon?,answer,answer,True,True,True,0,,P03061,6.5,0,0,False,"The cheapest of the 17 Maroon Cotton Kurtas under ₹2,000 is the Bunkar Maroon Cotton Short Kurti at ₹529 [P03061]. It is in stock [P03061].
+
+Details: **Bunkar Maroon Cotton Short Kurti**: ₹529, In stock, colour Maroon, material Cotton, size S, rated 2.9/5 [P03061]"
+Q55,multi_turn,I want a cotton shirt,clarify,clarify,True,,True,0,,P02010 P02213 P00734,7.7,0,0,False,"I found 260 Cotton Shirts, so I don't want to guess which one you mean. Here are 3 across the price range:
+
+1. Threadline White Cotton T-Shirt: ₹309, In stock [P02010]
+2. Threadline Green Cotton T-Shirt: ₹639, In stock [P02213]
+3. Threadline Black Cotton Formal Shirt: ₹1,699, Low stock (few left) [P00734]
+
+Which colour do you prefer: Blue, White, Grey or Pink? Or tell me a budget, size or the ID of one of these."
+Q56,multi_turn,show me white ones under ₹800,answer,answer,True,True,True,0,,P03022 P02651 P02609 P00460 P02519,6.3,0,0,False,"I found 18 White Cotton Shirts under ₹800. Here are the top 5:
+
+- Threadline White Cotton T-Shirt: ₹339, Low stock (few left) [P03022]
+- Collarwise White Cotton Polo Shirt: ₹699, Low stock (few left) [P02651]
+- Collarwise White Cotton Polo Shirt: ₹609, Low stock (few left) [P02609]
+- Threadline White Cotton T-Shirt: ₹329, In stock [P00460]
+- Collarwise White Cotton Polo Shirt: ₹689, In stock [P02519]
+
+Tell me a colour, size or budget to narrow it down."
+Q57,multi_turn,"I already said cotton, give me the cheapest",answer,answer,True,True,True,0,,P02010,6.1,0,0,False,"The cheapest of the 18 White Cotton Shirts under ₹800 is the Threadline White Cotton T-Shirt at ₹309 [P02010]. It is in stock [P02010].
+
+Details: **Threadline White Cotton T-Shirt**: ₹309, In stock, colour White, material Cotton, size L, rated 3.4/5 [P02010]"
+Q58,multi_turn,running shoes under 2000,clarify,clarify,True,,True,0,,P02987 P04784 P01926,8.3,0,0,False,"I found 34 Running Shoes under ₹2,000, so I don't want to guess which one you mean. Here are 3 across the price range:
+
+1. UrbanPace Grey Synthetic Running Shoes: ₹1,039, In stock [P02987]
+2. Stridex Black Knit Running Shoes: ₹1,459, In stock [P04784]
+3. Stridex Black Knit Running Shoes: ₹1,989, In stock [P01926]
+
+Which material do you prefer: Knit, Synthetic or Mesh? Or tell me a budget, size or the ID of one of these."
+Q59,multi_turn,black ones in size 9,clarify,clarify,True,,True,0,,P00426 P03652,7.2,0,0,False,"I found 2 Black Running Shoes size 9 under ₹2,000, so I don't want to guess which one you mean. Here are 2 across the price range:
+
+1. UrbanPace Black Mesh Running Shoes: ₹1,599, In stock [P00426]
+2. Trailmark Black Synthetic Running Shoes: ₹1,899, In stock [P03652]
+
+Which material do you prefer: Synthetic or Mesh? Or tell me a budget, size or the ID of one of these."
+Q60,multi_turn,sasta wala kaunsa hai?,answer,answer,True,True,True,0,,P00426,6.7,0,0,False,"The cheapest of the 2 Black Running Shoes size 9 under ₹2,000 is the UrbanPace Black Mesh Running Shoes at ₹1,599 [P00426]. It is in stock [P00426].
+
+Details: **UrbanPace Black Mesh Running Shoes**: ₹1,599, In stock, colour Black, material Mesh, size UK 9, rated 4.0/5 [P00426]"

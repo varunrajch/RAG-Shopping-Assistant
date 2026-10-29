@@ -1,0 +1,15 @@
+[theme]
+base = "light"
+primaryColor = "#2a78d6"
+
+[browser]
+gatherUsageStats = false
+
+[server]
+headless = true
+# The auto-reload watcher scans the transformers library and prints a harmless
+# "No module named torchvision" error. We do not need auto-reload for the demo.
+fileWatcherType = "none"
+
+[client]
+toolbarMode = "viewer"

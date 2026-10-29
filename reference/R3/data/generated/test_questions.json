@@ -1,0 +1,1271 @@
+[
+  {
+    "id": "Q01",
+    "query": "How much is the Stridex AeroGlide?",
+    "type": "english",
+    "expected": "answer",
+    "expected_ids": [
+      "P02154"
+    ],
+    "expected_policy": null,
+    "spec": {
+      "name": "AeroGlide"
+    },
+    "conversation": null,
+    "turn": null
+  },
+  {
+    "id": "Q02",
+    "query": "Is the Everlast pressure cooker in stock?",
+    "type": "english",
+    "expected": "answer",
+    "expected_ids": [
+      "P01602"
+    ],
+    "expected_policy": null,
+    "spec": {
+      "name": "Everlast"
+    },
+    "conversation": null,
+    "turn": null
+  },
+  {
+    "id": "Q03",
+    "query": "Tell me about the Voyager laptop bag",
+    "type": "english",
+    "expected": "answer",
+    "expected_ids": [
+      "P04915"
+    ],
+    "expected_policy": null,
+    "spec": {
+      "name": "Voyager"
+    },
+    "conversation": null,
+    "turn": null
+  },
+  {
+    "id": "Q04",
+    "query": "Rajmahal saree price",
+    "type": "english",
+    "expected": "answer",
+    "expected_ids": [
+      "P00792"
+    ],
+    "expected_policy": null,
+    "spec": {
+      "name": "Rajmahal"
+    },
+    "conversation": null,
+    "turn": null
+  },
+  {
+    "id": "Q05",
+    "query": "What material is the Moonbeam lamp?",
+    "type": "english",
+    "expected": "answer",
+    "expected_ids": [
+      "P01881"
+    ],
+    "expected_policy": null,
+    "spec": {
+      "name": "Moonbeam"
+    },
+    "conversation": null,
+    "turn": null
+  },
+  {
+    "id": "Q06",
+    "query": "What colour is the Coastline shirt?",
+    "type": "english",
+    "expected": "answer",
+    "expected_ids": [
+      "P04452"
+    ],
+    "expected_policy": null,
+    "spec": {
+      "name": "Coastline"
+    },
+    "conversation": null,
+    "turn": null
+  },
+  {
+    "id": "Q07",
+    "query": "Show me white cotton shirts under ₹1,000",
+    "type": "english",
+    "expected": "answer",
+    "expected_ids": [
+      "P00460",
+      "P00788",
+      "P01054",
+      "P01205",
+      "P01327",
+      "P01414",
+      "P01504",
+      "P01768",
+      "P02010",
+      "P02519",
+      "P02609",
+      "P02651",
+      "P02787",
+      "P03013",
+      "P03022",
+      "P03059",
+      "P03303",
+      "P03417",
+      "P03423",
+      "P03484",
+      "P03948",
+      "P04052",
+      "P04327",
+      "P04356",
+      "P04997"
+    ],
+    "expected_policy": null,
+    "spec": {
+      "category": "Shirts",
+      "colour": "White",
+      "material": "Cotton",
+      "max_price": 1000
+    },
+    "conversation": null,
+    "turn": null
+  },
+  {
+    "id": "Q08",
+    "query": "Cheapest non-stick pan",
+    "type": "english",
+    "expected": "answer",
+    "expected_ids": [
+      "P00619"
+    ],
+    "expected_policy": null,
+    "spec": {
+      "sub": "Non-Stick Pan"
+    },
+    "conversation": null,
+    "turn": null
+  },
+  {
+    "id": "Q09",
+    "query": "List backpacks under ₹800 in stock",
+    "type": "english",
+    "expected": "answer",
+    "expected_ids": [
+      "P00087",
+      "P00250",
+      "P00442",
+      "P00729",
+      "P01030",
+      "P02360",
+      "P02372",
+      "P03326",
+      "P03521"
+    ],
+    "expected_policy": null,
+    "spec": {
+      "sub": "Backpack",
+      "max_price": 800,
+      "in_stock": true
+    },
+    "conversation": null,
+    "turn": null
+  },
+  {
+    "id": "Q10",
+    "query": "Do you have green cushion covers?",
+    "type": "english",
+    "expected": "answer",
+    "expected_ids": [
+      "P00307",
+      "P00491",
+      "P00922",
+      "P01060",
+      "P01107",
+      "P01263",
+      "P01577",
+      "P01770",
+      "P02147",
+      "P03346",
+      "P03653",
+      "P03700",
+      "P03819",
+      "P03983",
+      "P04111",
+      "P04237",
+      "P04360",
+      "P04392",
+      "P04921"
+    ],
+    "expected_policy": null,
+    "spec": {
+      "sub": "Cushion Cover",
+      "colour": "Green"
+    },
+    "conversation": null,
+    "turn": null
+  },
+  {
+    "id": "Q11",
+    "query": "I need a maroon silk saree",
+    "type": "english",
+    "expected": "clarify",
+    "expected_ids": [],
+    "expected_policy": null,
+    "spec": {
+      "category": "Sarees",
+      "colour": "Maroon",
+      "material": "Silk"
+    },
+    "conversation": null,
+    "turn": null
+  },
+  {
+    "id": "Q12",
+    "query": "blu running shoe sasta wala",
+    "type": "hinglish",
+    "expected": "answer",
+    "expected_ids": [
+      "P00925"
+    ],
+    "expected_policy": null,
+    "spec": {
+      "sub": "Running Shoes",
+      "colour": "Blue"
+    },
+    "conversation": null,
+    "turn": null
+  },
+  {
+    "id": "Q13",
+    "query": "cotton kurta 1500 se kam hai kya",
+    "type": "hinglish",
+    "expected": "answer",
+    "expected_ids": [
+      "P00011",
+      "P00054",
+      "P00152",
+      "P00158",
+      "P00302",
+      "P00322",
+      "P00390",
+      "P00393",
+      "P00423",
+      "P00483",
+      "P00536",
+      "P00553",
+      "P00555",
+      "P00675",
+      "P00735",
+      "P00748",
+      "P00760",
+      "P00761",
+      "P00833",
+      "P00837",
+      "P00846",
+      "P00849",
+      "P00939",
+      "P00974",
+      "P01073",
+      "P01111",
+      "P01140",
+      "P01299",
+      "P01303",
+      "P01384",
+      "P01388",
+      "P01496",
+      "P01522",
+      "P01535",
+      "P01586",
+      "P01627",
+      "P01734",
+      "P01811",
+      "P01812",
+      "P01849",
+      "P01862",
+      "P01863",
+      "P01866",
+      "P01893",
+      "P01927",
+      "P01951",
+      "P01978",
+      "P02051",
+      "P02101",
+      "P02104",
+      "P02111",
+      "P02160",
+      "P02173",
+      "P02181",
+      "P02223",
+      "P02233",
+      "P02260",
+      "P02294",
+      "P02332",
+      "P02358",
+      "P02380",
+      "P02529",
+      "P02560",
+      "P02564",
+      "P02565",
+      "P02617",
+      "P02634",
+      "P02650",
+      "P02837",
+      "P02849",
+      "P02892",
+      "P02976",
+      "P02994",
+      "P03061",
+      "P03121",
+      "P03166",
+      "P03177",
+      "P03277",
+      "P03334",
+      "P03362",
+      "P03401",
+      "P03404",
+      "P03414",
+      "P03424",
+      "P03430",
+      "P03533",
+      "P03595",
+      "P03657",
+      "P03675",
+      "P03686",
+      "P03724",
+      "P03811",
+      "P03820",
+      "P03821",
+      "P03933",
+      "P03997",
+      "P04031",
+      "P04137",
+      "P04197",
+      "P04207",
+      "P04240",
+      "P04374",
+      "P04443",
+      "P04565",
+      "P04609",
+      "P04619",
+      "P04666",
+      "P04670",
+      "P04778",
+      "P04785",
+      "P04819",
+      "P04833",
+      "P04834",
+      "P04896",
+      "P04898",
+      "P04934",
+      "P04957",
+      "P04964",
+      "P04994"
+    ],
+    "expected_policy": null,
+    "spec": {
+      "category": "Kurtas",
+      "material": "Cotton",
+      "max_price": 1500
+    },
+    "conversation": null,
+    "turn": null
+  },
+  {
+    "id": "Q14",
+    "query": "kala joota size 9 dikhao",
+    "type": "hinglish",
+    "expected": "answer",
+    "expected_ids": [
+      "P00006",
+      "P00149",
+      "P00426",
+      "P00477",
+      "P01008",
+      "P01012",
+      "P01325",
+      "P01381",
+      "P01450",
+      "P02159",
+      "P02222",
+      "P02375",
+      "P02517",
+      "P02623",
+      "P03377",
+      "P03652",
+      "P04121",
+      "P04296",
+      "P04486",
+      "P04514"
+    ],
+    "expected_policy": null,
+    "spec": {
+      "category": "Footwear",
+      "colour": "Black",
+      "size": "9"
+    },
+    "conversation": null,
+    "turn": null
+  },
+  {
+    "id": "Q15",
+    "query": "neeli jeans 1000 tak",
+    "type": "hinglish",
+    "expected": "clarify",
+    "expected_ids": [],
+    "expected_policy": null,
+    "spec": {
+      "category": "Jeans",
+      "colour": "Blue",
+      "max_price": 1000
+    },
+    "conversation": null,
+    "turn": null
+  },
+  {
+    "id": "Q16",
+    "query": "lal saree chahiye",
+    "type": "hinglish",
+    "expected": "clarify",
+    "expected_ids": [],
+    "expected_policy": null,
+    "spec": {
+      "category": "Sarees",
+      "colour": "Red"
+    },
+    "conversation": null,
+    "turn": null
+  },
+  {
+    "id": "Q17",
+    "query": "steel ka pressure cooker sasta wala",
+    "type": "hinglish",
+    "expected": "answer",
+    "expected_ids": [
+      "P01248"
+    ],
+    "expected_policy": null,
+    "spec": {
+      "sub": "Pressure Cooker",
+      "material": "Stainless Steel"
+    },
+    "conversation": null,
+    "turn": null
+  },
+  {
+    "id": "Q18",
+    "query": "Chikankari kurta ka price kya hai?",
+    "type": "hinglish",
+    "expected": "answer",
+    "expected_ids": [
+      "P04833"
+    ],
+    "expected_policy": null,
+    "spec": {
+      "name": "Chikankari"
+    },
+    "conversation": null,
+    "turn": null
+  },
+  {
+    "id": "Q19",
+    "query": "laptop bag 2000 ke andar dikhao",
+    "type": "hinglish",
+    "expected": "answer",
+    "expected_ids": [
+      "P00012",
+      "P00015",
+      "P00134",
+      "P00188",
+      "P00475",
+      "P00649",
+      "P00732",
+      "P00811",
+      "P00897",
+      "P01017",
+      "P01241",
+      "P01242",
+      "P01261",
+      "P01296",
+      "P01309",
+      "P01417",
+      "P01540",
+      "P01706",
+      "P01707",
+      "P01943",
+      "P01993",
+      "P02226",
+      "P02351",
+      "P02398",
+      "P02545",
+      "P02715",
+      "P02737",
+      "P02880",
+      "P03009",
+      "P03020",
+      "P03077",
+      "P03213",
+      "P03338",
+      "P03558",
+      "P03874",
+      "P03896",
+      "P03992",
+      "P04085",
+      "P04128",
+      "P04249",
+      "P04313",
+      "P04315",
+      "P04355",
+      "P04740",
+      "P04821",
+      "P04915"
+    ],
+    "expected_policy": null,
+    "spec": {
+      "sub": "Laptop Bag",
+      "max_price": 2000
+    },
+    "conversation": null,
+    "turn": null
+  },
+  {
+    "id": "Q20",
+    "query": "aeroglyde runing shoes price",
+    "type": "misspelt",
+    "expected": "answer",
+    "expected_ids": [
+      "P02154"
+    ],
+    "expected_policy": null,
+    "spec": {
+      "name": "AeroGlide"
+    },
+    "conversation": null,
+    "turn": null
+  },
+  {
+    "id": "Q21",
+    "query": "cheep cotton kurtha",
+    "type": "misspelt",
+    "expected": "answer",
+    "expected_ids": [
+      "P01951"
+    ],
+    "expected_policy": null,
+    "spec": {
+      "category": "Kurtas",
+      "material": "Cotton"
+    },
+    "conversation": null,
+    "turn": null
+  },
+  {
+    "id": "Q22",
+    "query": "blak lether handbag under 3000",
+    "type": "misspelt",
+    "expected": "clarify",
+    "expected_ids": [],
+    "expected_policy": null,
+    "spec": {
+      "sub": "Handbag",
+      "colour": "Black",
+      "material": "Leather",
+      "max_price": 3000
+    },
+    "conversation": null,
+    "turn": null
+  },
+  {
+    "id": "Q23",
+    "query": "show sneakrs under 1500",
+    "type": "misspelt",
+    "expected": "answer",
+    "expected_ids": [
+      "P00037",
+      "P00052",
+      "P00182",
+      "P00199",
+      "P00229",
+      "P00285",
+      "P00560",
+      "P00646",
+      "P01018",
+      "P01048",
+      "P01082",
+      "P01190",
+      "P01396",
+      "P01655",
+      "P01678",
+      "P01960",
+      "P02091",
+      "P02280",
+      "P02357",
+      "P02409",
+      "P02415",
+      "P02541",
+      "P02853",
+      "P02896",
+      "P03813",
+      "P04020",
+      "P04244",
+      "P04403",
+      "P04759",
+      "P04762",
+      "P04775",
+      "P04885",
+      "P04970"
+    ],
+    "expected_policy": null,
+    "spec": {
+      "sub": "Sneakers",
+      "max_price": 1500
+    },
+    "conversation": null,
+    "turn": null
+  },
+  {
+    "id": "Q24",
+    "query": "presure cooker cheapest",
+    "type": "misspelt",
+    "expected": "answer",
+    "expected_ids": [
+      "P03909"
+    ],
+    "expected_policy": null,
+    "spec": {
+      "sub": "Pressure Cooker"
+    },
+    "conversation": null,
+    "turn": null
+  },
+  {
+    "id": "Q25",
+    "query": "pink sare",
+    "type": "misspelt",
+    "expected": "clarify",
+    "expected_ids": [],
+    "expected_policy": null,
+    "spec": {
+      "category": "Sarees",
+      "colour": "Pink"
+    },
+    "conversation": null,
+    "turn": null
+  },
+  {
+    "id": "Q26",
+    "query": "chikankri kurta",
+    "type": "misspelt",
+    "expected": "answer",
+    "expected_ids": [
+      "P04833"
+    ],
+    "expected_policy": null,
+    "spec": {
+      "name": "Chikankari"
+    },
+    "conversation": null,
+    "turn": null
+  },
+  {
+    "id": "Q27",
+    "query": "Do you sell iPhones?",
+    "type": "out_of_catalogue",
+    "expected": "refuse",
+    "expected_ids": [],
+    "expected_policy": null,
+    "spec": {},
+    "conversation": null,
+    "turn": null
+  },
+  {
+    "id": "Q28",
+    "query": "Do you have a gaming laptop?",
+    "type": "out_of_catalogue",
+    "expected": "refuse",
+    "expected_ids": [],
+    "expected_policy": null,
+    "spec": {},
+    "conversation": null,
+    "turn": null
+  },
+  {
+    "id": "Q29",
+    "query": "Any LED TV under 20000?",
+    "type": "out_of_catalogue",
+    "expected": "refuse",
+    "expected_ids": [],
+    "expected_policy": null,
+    "spec": {},
+    "conversation": null,
+    "turn": null
+  },
+  {
+    "id": "Q30",
+    "query": "I want a gold necklace",
+    "type": "out_of_catalogue",
+    "expected": "refuse",
+    "expected_ids": [],
+    "expected_policy": null,
+    "spec": {},
+    "conversation": null,
+    "turn": null
+  },
+  {
+    "id": "Q31",
+    "query": "Do you sell washing machines?",
+    "type": "out_of_catalogue",
+    "expected": "refuse",
+    "expected_ids": [],
+    "expected_policy": null,
+    "spec": {},
+    "conversation": null,
+    "turn": null
+  },
+  {
+    "id": "Q32",
+    "query": "football boots size 9",
+    "type": "out_of_catalogue",
+    "expected": "refuse",
+    "expected_ids": [],
+    "expected_policy": null,
+    "spec": {},
+    "conversation": null,
+    "turn": null
+  },
+  {
+    "id": "Q33",
+    "query": "Price of the blue running shoe?",
+    "type": "trap",
+    "expected": "clarify",
+    "expected_ids": [],
+    "expected_policy": null,
+    "spec": {
+      "sub": "Running Shoes",
+      "colour": "Blue"
+    },
+    "conversation": null,
+    "turn": null
+  },
+  {
+    "id": "Q34",
+    "query": "What is the price of the iPhone 15?",
+    "type": "trap",
+    "expected": "refuse",
+    "expected_ids": [],
+    "expected_policy": null,
+    "spec": {},
+    "conversation": null,
+    "turn": null
+  },
+  {
+    "id": "Q35",
+    "query": "Is the red saree in stock?",
+    "type": "trap",
+    "expected": "clarify",
+    "expected_ids": [],
+    "expected_policy": null,
+    "spec": {
+      "category": "Sarees",
+      "colour": "Red",
+      "in_stock": true
+    },
+    "conversation": null,
+    "turn": null
+  },
+  {
+    "id": "Q36",
+    "query": "What is the cheapest laptop?",
+    "type": "trap",
+    "expected": "refuse",
+    "expected_ids": [],
+    "expected_policy": null,
+    "spec": {},
+    "conversation": null,
+    "turn": null
+  },
+  {
+    "id": "Q37",
+    "query": "Silk saree under ₹500",
+    "type": "trap",
+    "expected": "refuse",
+    "expected_ids": [],
+    "expected_policy": null,
+    "spec": {
+      "category": "Sarees",
+      "material": "Silk",
+      "max_price": 500
+    },
+    "conversation": null,
+    "turn": null
+  },
+  {
+    "id": "Q38",
+    "query": "Green leather jeans",
+    "type": "trap",
+    "expected": "refuse",
+    "expected_ids": [],
+    "expected_policy": null,
+    "spec": {
+      "category": "Jeans",
+      "colour": "Green",
+      "material": "Leather"
+    },
+    "conversation": null,
+    "turn": null
+  },
+  {
+    "id": "Q39",
+    "query": "Running shoes in size 14",
+    "type": "trap",
+    "expected": "refuse",
+    "expected_ids": [],
+    "expected_policy": null,
+    "spec": {
+      "sub": "Running Shoes",
+      "size": "14"
+    },
+    "conversation": null,
+    "turn": null
+  },
+  {
+    "id": "Q40",
+    "query": "Do you have the Voyager laptop bag in red?",
+    "type": "trap",
+    "expected": "refuse",
+    "expected_ids": [],
+    "expected_policy": null,
+    "spec": {},
+    "conversation": null,
+    "turn": null
+  },
+  {
+    "id": "Q41",
+    "query": "What is your return policy?",
+    "type": "policy",
+    "expected": "answer",
+    "expected_ids": [],
+    "expected_policy": "R1",
+    "spec": {},
+    "conversation": null,
+    "turn": null
+  },
+  {
+    "id": "Q42",
+    "query": "How many days do I have to return an item?",
+    "type": "policy",
+    "expected": "answer",
+    "expected_ids": [],
+    "expected_policy": "R1",
+    "spec": {},
+    "conversation": null,
+    "turn": null
+  },
+  {
+    "id": "Q43",
+    "query": "When will I get my refund?",
+    "type": "policy",
+    "expected": "answer",
+    "expected_ids": [],
+    "expected_policy": "R3",
+    "spec": {},
+    "conversation": null,
+    "turn": null
+  },
+  {
+    "id": "Q44",
+    "query": "Is shipping free?",
+    "type": "policy",
+    "expected": "answer",
+    "expected_ids": [],
+    "expected_policy": "S2",
+    "spec": {},
+    "conversation": null,
+    "turn": null
+  },
+  {
+    "id": "Q45",
+    "query": "Do you ship outside India?",
+    "type": "policy",
+    "expected": "answer",
+    "expected_ids": [],
+    "expected_policy": "S1",
+    "spec": {},
+    "conversation": null,
+    "turn": null
+  },
+  {
+    "id": "Q46",
+    "query": "Is cash on delivery available?",
+    "type": "policy",
+    "expected": "answer",
+    "expected_ids": [],
+    "expected_policy": "S4",
+    "spec": {},
+    "conversation": null,
+    "turn": null
+  },
+  {
+    "id": "Q47",
+    "query": "What is the warranty on pressure cookers?",
+    "type": "policy",
+    "expected": "answer",
+    "expected_ids": [],
+    "expected_policy": "W1",
+    "spec": {},
+    "conversation": null,
+    "turn": null
+  },
+  {
+    "id": "Q48",
+    "query": "Can I exchange shoes for a different size?",
+    "type": "policy",
+    "expected": "answer",
+    "expected_ids": [],
+    "expected_policy": "R4",
+    "spec": {},
+    "conversation": null,
+    "turn": null
+  },
+  {
+    "id": "Q49",
+    "query": "return kitne din mein kar sakte hai?",
+    "type": "policy",
+    "expected": "answer",
+    "expected_ids": [],
+    "expected_policy": "R1",
+    "spec": {},
+    "conversation": null,
+    "turn": null
+  },
+  {
+    "id": "Q50",
+    "query": "Do you offer EMI?",
+    "type": "policy",
+    "expected": "refuse",
+    "expected_ids": [],
+    "expected_policy": null,
+    "spec": {},
+    "conversation": null,
+    "turn": null
+  },
+  {
+    "id": "Q51",
+    "query": "Do you offer gift wrapping?",
+    "type": "policy",
+    "expected": "refuse",
+    "expected_ids": [],
+    "expected_policy": null,
+    "spec": {},
+    "conversation": null,
+    "turn": null
+  },
+  {
+    "id": "Q52",
+    "query": "I want a kurta under ₹2,000",
+    "type": "multi_turn",
+    "expected": "clarify",
+    "expected_ids": [],
+    "expected_policy": null,
+    "spec": {
+      "category": "Kurtas",
+      "max_price": 2000
+    },
+    "conversation": "C1",
+    "turn": 1
+  },
+  {
+    "id": "Q53",
+    "query": "show me cotton ones",
+    "type": "multi_turn",
+    "expected": "answer",
+    "expected_ids": [
+      "P00011",
+      "P00054",
+      "P00150",
+      "P00152",
+      "P00158",
+      "P00204",
+      "P00302",
+      "P00322",
+      "P00351",
+      "P00390",
+      "P00393",
+      "P00423",
+      "P00483",
+      "P00536",
+      "P00553",
+      "P00555",
+      "P00675",
+      "P00702",
+      "P00735",
+      "P00748",
+      "P00760",
+      "P00761",
+      "P00833",
+      "P00837",
+      "P00846",
+      "P00849",
+      "P00921",
+      "P00939",
+      "P00974",
+      "P01073",
+      "P01083",
+      "P01111",
+      "P01140",
+      "P01183",
+      "P01299",
+      "P01303",
+      "P01384",
+      "P01388",
+      "P01496",
+      "P01522",
+      "P01535",
+      "P01586",
+      "P01627",
+      "P01734",
+      "P01757",
+      "P01811",
+      "P01812",
+      "P01849",
+      "P01862",
+      "P01863",
+      "P01866",
+      "P01893",
+      "P01927",
+      "P01951",
+      "P01978",
+      "P01992",
+      "P02051",
+      "P02101",
+      "P02104",
+      "P02111",
+      "P02144",
+      "P02160",
+      "P02173",
+      "P02181",
+      "P02223",
+      "P02233",
+      "P02260",
+      "P02294",
+      "P02332",
+      "P02346",
+      "P02358",
+      "P02380",
+      "P02408",
+      "P02455",
+      "P02529",
+      "P02560",
+      "P02564",
+      "P02565",
+      "P02608",
+      "P02617",
+      "P02634",
+      "P02650",
+      "P02685",
+      "P02736",
+      "P02837",
+      "P02849",
+      "P02892",
+      "P02976",
+      "P02994",
+      "P03061",
+      "P03121",
+      "P03166",
+      "P03177",
+      "P03277",
+      "P03334",
+      "P03362",
+      "P03401",
+      "P03404",
+      "P03414",
+      "P03424",
+      "P03430",
+      "P03533",
+      "P03563",
+      "P03595",
+      "P03657",
+      "P03675",
+      "P03686",
+      "P03724",
+      "P03811",
+      "P03820",
+      "P03821",
+      "P03933",
+      "P03997",
+      "P04031",
+      "P04098",
+      "P04137",
+      "P04172",
+      "P04197",
+      "P04207",
+      "P04240",
+      "P04291",
+      "P04319",
+      "P04374",
+      "P04443",
+      "P04565",
+      "P04609",
+      "P04619",
+      "P04665",
+      "P04666",
+      "P04670",
+      "P04676",
+      "P04755",
+      "P04778",
+      "P04785",
+      "P04819",
+      "P04833",
+      "P04834",
+      "P04896",
+      "P04898",
+      "P04934",
+      "P04956",
+      "P04957",
+      "P04964",
+      "P04980",
+      "P04994"
+    ],
+    "expected_policy": null,
+    "spec": {
+      "category": "Kurtas",
+      "material": "Cotton",
+      "max_price": 2000
+    },
+    "conversation": "C1",
+    "turn": 2
+  },
+  {
+    "id": "Q54",
+    "query": "which is the cheapest in maroon?",
+    "type": "multi_turn",
+    "expected": "answer",
+    "expected_ids": [
+      "P03061"
+    ],
+    "expected_policy": null,
+    "spec": {
+      "category": "Kurtas",
+      "material": "Cotton",
+      "colour": "Maroon",
+      "max_price": 2000
+    },
+    "conversation": "C1",
+    "turn": 3
+  },
+  {
+    "id": "Q55",
+    "query": "I want a cotton shirt",
+    "type": "multi_turn",
+    "expected": "clarify",
+    "expected_ids": [],
+    "expected_policy": null,
+    "spec": {
+      "category": "Shirts",
+      "material": "Cotton"
+    },
+    "conversation": "C2",
+    "turn": 1
+  },
+  {
+    "id": "Q56",
+    "query": "show me white ones under ₹800",
+    "type": "multi_turn",
+    "expected": "answer",
+    "expected_ids": [
+      "P00460",
+      "P00788",
+      "P01414",
+      "P01504",
+      "P02010",
+      "P02519",
+      "P02609",
+      "P02651",
+      "P03013",
+      "P03022",
+      "P03303",
+      "P03417",
+      "P03423",
+      "P03484",
+      "P04052",
+      "P04327",
+      "P04356",
+      "P04997"
+    ],
+    "expected_policy": null,
+    "spec": {
+      "category": "Shirts",
+      "material": "Cotton",
+      "colour": "White",
+      "max_price": 800
+    },
+    "conversation": "C2",
+    "turn": 2
+  },
+  {
+    "id": "Q57",
+    "query": "I already said cotton, give me the cheapest",
+    "type": "multi_turn",
+    "expected": "answer",
+    "expected_ids": [
+      "P02010"
+    ],
+    "expected_policy": null,
+    "spec": {
+      "category": "Shirts",
+      "material": "Cotton",
+      "colour": "White",
+      "max_price": 800
+    },
+    "conversation": "C2",
+    "turn": 3
+  },
+  {
+    "id": "Q58",
+    "query": "running shoes under 2000",
+    "type": "multi_turn",
+    "expected": "clarify",
+    "expected_ids": [],
+    "expected_policy": null,
+    "spec": {
+      "sub": "Running Shoes",
+      "max_price": 2000
+    },
+    "conversation": "C3",
+    "turn": 1
+  },
+  {
+    "id": "Q59",
+    "query": "black ones in size 9",
+    "type": "multi_turn",
+    "expected": "clarify",
+    "expected_ids": [],
+    "expected_policy": null,
+    "spec": {
+      "sub": "Running Shoes",
+      "colour": "Black",
+      "size": "9",
+      "max_price": 2000
+    },
+    "conversation": "C3",
+    "turn": 2
+  },
+  {
+    "id": "Q60",
+    "query": "sasta wala kaunsa hai?",
+    "type": "multi_turn",
+    "expected": "answer",
+    "expected_ids": [
+      "P00426"
+    ],
+    "expected_policy": null,
+    "spec": {
+      "sub": "Running Shoes",
+      "colour": "Black",
+      "size": "9",
+      "max_price": 2000
+    },
+    "conversation": "C3",
+    "turn": 3
+  }
+]
