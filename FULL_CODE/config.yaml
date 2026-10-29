@@ -1,0 +1,41 @@
+# All tunable settings live here (coding guidelines rule 2 / rule 9).
+# Secrets are NOT stored here: they come from environment variables (see .env.example).
+
+paths:
+  data_dir: data                       # relative to FULL_CODE/
+  catalogue: catalogue.jsonl
+  policy: policy.md
+  query_log: logs/queries.jsonl
+
+matching:
+  fuzzy_name_cutoff: 85                # rapidfuzz ratio for misspelt brand / product-line names
+  fuzzy_min_token_len: 5               # shorter words must match exactly
+  max_join_tokens: 3                   # "ghar kraft" -> "gharkraft", "quil edge" -> "quiledge"
+
+decision:
+  max_cited_products: 10               # the scorer gives no credit above 10 citations
+  max_list_items: 10                   # products shown for "show me" requests
+  max_clarify_options: 10              # products listed in a clarifying question
+  max_same_answer_citations: 5         # variants cited when they all share the asked answer
+  extra_policy_citations: 1            # one supporting policy sub-section is free in the scorer
+
+llm:
+  provider: none                       # none | groq   (override with LLM_PROVIDER in .env)
+  # the LLM is only a fallback: it is called when the rules engine could not understand a message
+  model: openai/gpt-oss-20b            # Groq model id; override with LLM_MODEL
+  reasoning_effort: low                # for reasoning models (gpt-oss); set to null for others
+  base_url: https://api.groq.com/openai/v1
+  temperature: 0.0
+  max_tokens_rewrite: 300              # includes the model's hidden reasoning tokens
+  timeout_s: 8
+  max_retries: 2
+  # USD per 1M tokens (Groq list price for the model above, approximate); used only for the cost report
+  cost_per_million_in: 0.075
+  cost_per_million_out: 0.30
+
+api:
+  host: 127.0.0.1
+  port: 8000
+  cors_origins: ["http://127.0.0.1:8000", "http://localhost:8000"]
+  max_message_chars: 300
+  rate_limit_per_minute: 30

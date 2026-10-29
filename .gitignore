@@ -1,0 +1,24 @@
+# secrets
+.env
+# pack data and downloaded models (see README for where to put them)
+FULL_CODE/data/
+models/
+FULL_CODE/models/
+# environments and caches
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+node_modules/
+dist/
+build/
+# runtime output
+logs/
+FULL_CODE/reports/
+*.log
+# local-only material (pack README, round-1 prototype, slides, notes)
+plan.md
+# OS junk
+.DS_Store
