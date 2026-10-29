@@ -24,6 +24,18 @@ SOLD_CATEGORIES = (
     "apparel, footwear, bags & luggage, beauty & personal care, electronics accessories, "
     "home & kitchen, small appliances, sports & fitness, stationery and toys"
 )
+# brands whose usual spelling is not simple title case
+BRAND_SPELLING = {
+    "iphone": "iPhone",
+    "airpods": "AirPods",
+    "boat": "boAt",
+    "hp": "HP",
+    "lg": "LG",
+    "jbl": "JBL",
+    "oneplus": "OnePlus",
+    "tvs": "TVS",
+    "levis": "Levi's",
+}
 UNIT_SUFFIX = {
     "_mm": " mm",
     "_cm": " cm",
@@ -304,11 +316,9 @@ class ResponseBuilder:
         )
 
     def _real_brand(self, d: Decision) -> tuple[str, list[StatedFact], bool]:
+        brand = BRAND_SPELLING.get(d.reason, d.reason.title())
         return (
-            (
-                f"I don't have that. We don't carry {d.reason.title()} products; our catalogue only has our "
-                "own store brands."
-            ),
+            f"I don't have that. We don't carry {brand} products; our catalogue has only our store brands.",
             [],
             False,
         )
