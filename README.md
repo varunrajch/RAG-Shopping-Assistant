@@ -39,31 +39,9 @@ A rules-first assistant. Code makes every decision and copies every fact from th
 
 ## Architecture
 
-```
-shopper message
-   │
-   ▼
-parser.py ──── vocabulary built from the catalogue itself: brands, product lines, colours, materials,
-   │           attribute values; joins "ripple flex"→RippleFlex, fuzzy "krida"→Kridaa (rapidfuzz)
-   │           + lexicon.py: Hinglish/misspellings, product-type aliases, question patterns, units, budgets
-   ▼
-decide.py ──── policy question? → policy_router.py (sub-section or "policy gap")
-   │           follow-up turn?  → apply the new constraints to the previous turn's products (memory)
-   │           named product?   → its variants, narrowed by colour / size / pack
-   │           generic request? → filters.py (sub-category, colour, material, gender, units, budget, stock)
-   │           then: answer · clarify (variants differ in the asked field) · refuse
-   │
-   ├── rules refused because they did not understand the message (and LLM_PROVIDER=groq)?
-   │      → LLM rewrites it in catalogue words → parser → decide again (rules still decide everything)
-   ▼
-response.py ── templates; every price / stock / attribute copied from the cited catalogue row;
-   │           stated_prices and stated_facts use exact catalogue field names
-   ▼
-guard.py ───── re-checks with the scorer's rules: every ₹ amount must be a cited product's price/MRP/discount,
-   │           a policy amount (if policy is cited) or the shopper's own budget; anything else is removed
-   ▼
-reply + latency_ms + tokens + cost
-```
+<p align="center">
+  <img src="Architecture.png" alt="Architecture: shopper message → parser → decide (policy router, follow-up turn, named product, filters) → generate action → LLM rewrite only if needed → response → guard → final reply" width="720">
+</p>
 
 ## How to run
 
