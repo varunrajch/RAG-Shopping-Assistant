@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shopping Assistant</title>
+  <link rel="icon" type="image/svg+xml" href="/static/logo.svg">
+  <link rel="stylesheet" href="/static/styles.css?v=4">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <img class="logo" src="/static/logo.svg" alt="" width="40" height="40">
+      <div>
+        <h1>Shopping Assistant</h1>
+        <p class="tagline">Answers only from the catalogue and store policy. Every fact is cited.</p>
+      </div>
+    </div>
+    <div class="top-actions">
+      <span id="llm-status" class="pill">LLM: …</span>
+      <button id="new-chat" type="button" class="ghost">New chat</button>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="chat" aria-label="Chat">
+      <div id="messages" class="messages" aria-live="polite">
+        <div class="msg bot intro">
+          <div class="bubble">
+            <p>Hello! How can I help you today?</p>
+            <p class="muted">Ask about products, prices, stock availability or store policies.</p>
+          </div>
+        </div>
+      </div>
+      <div class="examples" id="examples" aria-label="Example questions"></div>
+      <form id="composer" class="composer" autocomplete="off">
+        <input id="input" type="text" maxlength="300" placeholder="e.g. green running shoes kitne ke hai"
+               aria-label="Your message" required>
+        <button type="submit" id="send">Send</button>
+      </form>
+    </section>
+
+    <aside class="inspector" aria-label="Inspector">
+      <nav class="tabs" role="tablist">
+        <button role="tab" class="tab active" data-tab="source">Sources</button>
+        <button role="tab" class="tab" data-tab="reasoning">Reasoning</button>
+        <button role="tab" class="tab" data-tab="metrics">Latency &amp; cost</button>
+      </nav>
+      <div class="panel active" id="panel-source">
+        <p class="muted">The full catalogue rows and policy text behind the latest answer appear here
+          automatically.</p>
+      </div>
+      <div class="panel" id="panel-reasoning">
+        <p class="muted">Send a message to see how it was understood and why the assistant chose to answer,
+          clarify or refuse.</p>
+      </div>
+      <div class="panel" id="panel-metrics"></div>
+    </aside>
+  </main>
+  <script src="/static/app.js?v=4"></script>
+</body>
+</html>
