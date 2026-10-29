@@ -37,8 +37,6 @@ A rules-first assistant. Code makes every decision and copies every fact from th
 - **Web demo:** a chat UI with a Sources panel showing the cited catalogue rows or policy text, the reasoning behind each decision, and latency and token cost per query.
 - **Tools and technologies:** Python 3.11 (uv), FastAPI, Pydantic, rapidfuzz, HTML/CSS/JavaScript, Groq API (`openai/gpt-oss-20b`), pytest, ruff.
 
-**Results** (official `evaluate.py`, 40 dev questions): primary score **1.000** (baseline 0.73), **0** hallucinated prices, about **1 ms** per query, **0** tokens. Test-set predictions: `submission/R3_predictions.jsonl`.
-
 ## Architecture
 
 ```
@@ -69,35 +67,46 @@ reply + latency_ms + tokens + cost
 
 ## How to run
 
-- **Start the chatbot:** see [`FULL_CODE/COMMANDS.md`](FULL_CODE/COMMANDS.md)
-- **Questions to try**, by category (answer, clarify, policy, refusal, multi-turn, LLM): see [`FULL_CODE/questions.md`](FULL_CODE/questions.md)
+**1. Install (first time only)**
 
 ```bash
 cd FULL_CODE
-uv sync                          # install locked dependencies
-cp .env.example .env             # optional: add GROQ_API_KEY for the LLM fallback
-uv run python main.py serve      # chatbot at http://127.0.0.1:8000, API docs at /api/docs
+uv sync
 ```
 
-Put the problem pack's `data/` files in `FULL_CODE/data/` (git-ignored). No models need downloading.
+Put the problem pack's data files in `FULL_CODE/data/`. To use the LLM fallback, add your Groq key to
+`FULL_CODE/.env` (copy `.env.example`); without a key the chatbot still works.
 
-**Environment variables** (`FULL_CODE/.env.example`): `LLM_PROVIDER` (`groq` or `none`), `GROQ_API_KEY`, and optionally `LLM_MODEL` and `DATA_DIR`. Other settings live in `FULL_CODE/config.yaml`.
-
-**Submission file, dev score and latency/cost report:**
+**2. Start**
 
 ```bash
-LLM_PROVIDER=none uv run python main.py predict --questions data/questions_test.csv --out ../submission/R3_predictions.jsonl
-uv run python main.py predict --questions data/questions_dev.csv --out reports/R3_dev_predictions.jsonl
-uv run python scripts/evaluate.py --submission reports/R3_dev_predictions.jsonl --truth data/questions_dev_truth.jsonl --data-dir data
-uv run python main.py report --predictions ../submission/R3_predictions.jsonl
+cd FULL_CODE
+uv run python main.py serve
 ```
 
-**Tests** (71 tests on a small synthetic store, LLM calls mocked):
+**3. Open**
 
-```bash
-uv run pytest
-uv run ruff check . && uv run ruff format --check .
-```
+| What | Link |
+|---|---|
+| Chatbot | http://127.0.0.1:8000/ |
+| FastAPI endpoints (interactive docs) | http://127.0.0.1:8000/api/docs#/ |
+
+Questions to try, by category: [`FULL_CODE/questions.md`](FULL_CODE/questions.md). The same steps are in [`FULL_CODE/COMMANDS.md`](FULL_CODE/COMMANDS.md).
+
+**Run the tests:** `cd FULL_CODE && uv run pytest` (71 tests)
+
+**Results** (measured with the organisers' `evaluate.py` and our latency report):
+
+| Metric | Value |
+|---|---|
+| Dev score (40 questions) | **1.000** (baseline 0.73) |
+| Action accuracy | 1.000 |
+| Grounded answers | 100% |
+| Hallucinated prices | **0** |
+| Test-set predictions | 150 questions: 82 answer, 30 clarify, 38 refuse |
+| Latency per query | mean 0.9 ms, p95 1.6 ms |
+| LLM tokens / cost per query | 0 / $0 (submission generated offline) |
+| LLM fallback, when used | about 900 tokens, about 0.5 s, about $0.0001 per query |
 
 ## AI usage
 
